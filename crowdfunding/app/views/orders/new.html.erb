@@ -1,0 +1,33 @@
+<div class="main posts-show">
+  <div class="container">
+    <div class="posts-show-item">
+
+
+     <h1>商品一覧</h1>
+     
+       <% @oder.each do |order|%>
+        <article>
+          
+            <section>
+                <h2>商品名 <%= post.name %>　</h2>
+                <h4>支援額 <%=  %>　</h4>
+                <h4>口数 <%=  %>　</h4>
+                <h4>小計 <%=  %>　</h4>
+            </section>
+                
+          <%= 合計 %>
+          
+          <p>デフォルト：
+            <label><input type="radio" name="q1" value="クレジットカード">クレジットカード</label>
+            <label><input type="radio" name="q1" value="銀行振込">銀行振込</label>
+　　　　　</p>
+          
+          <button type="submit">注文を確定する</button>
+        </article>
+      <% end %>
+
+
+
+      </div>
+    </div>
+  </div>

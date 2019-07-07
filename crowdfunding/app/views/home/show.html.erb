@@ -1,0 +1,26 @@
+<div class="main posts-show">
+  <div class="container">
+    <div class="posts-show-item">
+
+
+     <h1>商品一覧</h1>
+     
+       <% @posts.each do |post|%>
+        <article>
+          
+            <section>
+                <h2>商品名 <%= post.name %>　</h2>
+                <h4>商品詳細 <%= post.description %>　</h4>
+            </section>
+                
+          <%= post.created_at %>
+          <%= link_to 'カートに入れる'%>
+          <button type="submit">カートに入れる</button>
+        </article>
+      <% end %>
+
+
+
+      </div>
+    </div>
+  </div>
